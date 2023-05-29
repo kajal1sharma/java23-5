@@ -4,16 +4,26 @@ public class Identifiers {
     public static void main(String[] args) {
 
 
+
+        //Identifiers main String are these identifires or keywords?
+
+        int main=90;
+        System.out.println(main);
+
+        //keywords cannot be used as identifiers
+        //int , byte short long if , else
      
+        //int byte =90;
 
-        float floatNum;
-        floatNum=56.78f;
 
-        float maxValue = Float.MAX_VALUE;
-        System.out.println(maxValue);
+        // float floatNum;
+        // floatNum=56.78f;
 
-        double d= 56.78;
+        // float maxValue = Float.MAX_VALUE;
+        // System.out.println(maxValue);
 
+        // double d= 56.78;
+           double d= Double.MAX_VALUE;
 
         //multi line comments /*  */
        /*  int num2;//declaration
