@@ -15,6 +15,31 @@ abstract class Book {
     abstract void getcost();
 }
 
+abstract class Novel extends Book {
+    int x;
+}
+
+class Fantacy extends Novel {
+
+    void aboutTheBook() {
+
+    }
+
+    void getcost() {
+
+    }
+}
+
+class Reference extends Book {
+    void aboutTheBook() {
+
+    }
+
+    void getcost() {
+
+    }
+}
+
 class ScienceAndTech extends Book {
     int x;
     int y;
@@ -35,6 +60,7 @@ public class abstractKey {
         ScienceAndTech sc = new ScienceAndTech();
         sc.aboutTheBook();
         sc.cost = 90;
+        sc.getInfo();
 
     }
 }
