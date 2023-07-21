@@ -1,16 +1,64 @@
 public class Operators {
     public static void main(String[] args) {
         
+        int a=10;
+        int b=90;
+
+        int sum = a + b;
+        int div = b / a;
+        int mul = b * a;
+        int sub = b - a;
+
+       // expressions
+       // ==========
+   
+        //  a + (c*d ) +(c*(d/(a+b)))
+        //(a<b && c<d ) || ( a<d || a>f && a<b )
+
+        //conditionals
+
+        boolean rain =true;
+        boolean umbrella =false;
+        boolean raincoat=true;
+
+        if((rain==true && umbrella==false) && (raincoat==false)){
+            System.out.println("you can not go out");
+            System.out.println("you can not go out");
+            System.out.println("you can not go out");
+            System.out.println("you can not go out");
+            System.out.println("you can not go out");
+            System.out.println("you can not go out");
+            System.out.println("you can not go out");
+
+        }
+        else{
+            System.out.println("you can go out");
+            System.out.println("you can go out");
+            System.out.println("you can go out");
+            System.out.println("you can go out");
+            System.out.println("you can go out");
+            System.out.println("you can go out");
+            System.out.println("you can go out");
+        }
+
+
+
+
+
 
         //relational operator
 
         //&&(And) , ||(Or) ,!(Not)
 
-         boolean bool1 =false;
-         boolean bool2 =false;
+        //  boolean bool1 =false;
+        //  boolean bool2 =false;
 
-         boolean result = bool1 || bool2;
-         System.out.println(result);
+        //  boolean result = bool1 || bool2;
+        //  System.out.println(result);
+
+        //  boolean bool1 = true;
+        //  System.out.println(!(!bool1));
+
 
 
         // boolean bool1=false;
