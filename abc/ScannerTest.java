@@ -1,19 +1,21 @@
 package abc;
 
 public class ScannerTest {
-    int x;
+    private int x;
     int y;
-    int z;
+    protected int z;
+    public int w;
 
-    public ScannerTest(int x, int y, int z){
+     public ScannerTest(int x, int y, int z){
         this.x=x;
         this.y=y;
         this.z=z;
     }
-    public void add(int a, int b){
+     int add(int a, int b){
         System.out.println(a+b);
+        return a+b;
     }
-    public void printInfo(){
+    void printInfo(){
         System.out.println(x);
         System.out.println(y);
         System.out.println(z);
