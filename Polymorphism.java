@@ -21,6 +21,9 @@ class Child extends Base{
     }
 }
 
+class Child2 extends Child{
+
+}
 public class Polymorphism {
     public static void main(String[] args) {
         // Base obj = new Base();
@@ -29,7 +32,7 @@ public class Polymorphism {
         // Child  cobj= new Child();
         // cobj.xyz();
         // cobj.pqr();
-        Base ref = new Child();
+        Base ref = new Child2();
         ref.xyz();
         ref.pqr();
         // cobj.pqr();
