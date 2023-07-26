@@ -8,7 +8,12 @@ public class Exception2 {
     }
     public static void dosomethingmore(){
         System.out.println("line 5");
-        doSomethingEvenMore();
+        try{
+            doSomethingEvenMore();
+        }
+        catch(Exception e){
+            
+        }
         System.out.println("line 6");
     }
     public static void dosomething(){
