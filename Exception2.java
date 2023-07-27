@@ -3,8 +3,13 @@ public class Exception2 {
     
     public static void doSomethingEvenMore(){
         System.out.println("line 7");
-        int a =90/0;//exc
-        System.out.println("line 8");
+        try{
+            int a =90/0;//exc
+        }
+        catch(Exception e){
+
+        }
+       
     }
     public static void dosomethingmore(){
         System.out.println("line 5");
@@ -25,6 +30,5 @@ public class Exception2 {
         System.out.println("lline 1");
         dosomething();
         System.out.println("line 2");
-
     }
 }
