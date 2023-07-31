@@ -19,18 +19,21 @@ public class Exception4 {
 
 
         //price >50,000
-        try{
+       try{
             int price =0;
+             Exception e=null;
             Scanner sc= new Scanner(System.in);
             price= sc.nextInt();
             if(price>50000){
-               throw new Exception("price cannot be this high");
+               e= new Exception("price cannot be this high");
+                
             }
             else{
                 price=price*100;
             }
             int q=90+80;
             System.out.println("hello world");
+            throw e;
         }
         catch(Exception e){
             System.out.println(e.getMessage());
