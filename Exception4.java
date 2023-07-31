@@ -26,21 +26,25 @@ public class Exception4 {
             price= sc.nextInt();
             if(price>50000){
                e= new Exception("price cannot be this high");
-                
+                throw e;
             }
             else{
                 price=price*100;
             }
             int q=90+80;
             System.out.println("hello world");
-            throw e;
+            
         }
         catch(Exception e){
             System.out.println(e.getMessage());
 
         }
-        int a=90+90;
-        System.out.println(a);
+        finally
+        {
+            System.out.println("this is my first application");
+        }
+        // int a=90+90;
+        // System.out.println(a);
 
 
         // try{
