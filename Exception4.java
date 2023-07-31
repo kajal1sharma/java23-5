@@ -14,7 +14,19 @@ public class Exception4 {
     public static void doSomethingEvenMore() throws FileNotFoundException{
         FileInputStream fs= new FileInputStream("abc.txt");
     }
-    public static void main(String[] args) throws FileNotFoundException {
-        doSomething();
+    public static void main(String[] args)  {
+        try{
+        
+            doSomething();
+        }
+        catch(FileNotFoundException e){
+            // System.out.println(e.getMessage());
+                try{
+                FileInputStream fs= new FileInputStream("Arrays5.java");
+                }
+                catch( Exception ee){
+                    System.out.println("it did not work");
+                }
+        }
     }
 }
