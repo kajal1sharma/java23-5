@@ -1,32 +1,60 @@
  class StringFunctions{
  
+
+
+
+    static boolean checkPalindrome(String str){
+        String rev ="";
+        for(int i=str.length()-1;i>=0;i--){
+            rev=rev+str.charAt(i);
+        }
+
+        if(rev.equals(str)){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+
 public static void main(String[] args) {
-    String str1="tree";//string literals
+
+
+    String str ="abcdscba";
+
+    boolean ans= checkPalindrome(str);
+    System.out.println(ans);
+
+
+    boolean ans2 = checkPalindrome2(str);
+    System.out.println(ans2);
+   // String str1="tree";//string literals
 
     // String str="gjk,1jgnajdgkd,,kfaaabjf,,gkdf9kcffg";
     // String []arr = str.split(",,");
     // for(int i=0;i<arr.length;i++){
     //     System.out.println(arr[i]);
     // }
-     String strarr[]={"text.py", "abc.java","index.html","test.java", "script.js"};
+    //  String strarr[]={"text.py", "abc.java","index.html","test.java", "script.js"};
      
-        int size=0;
-        for(int i=0;i<strarr.length;i++){
-            if(strarr[i].endsWith(".java")){
-                size++;
-            }
-        }
-        int j=0;
-        String ans[] = new String[size];
-        for(int i=0;i<strarr.length;i++){
-             if(strarr[i].endsWith(".java")){
-                ans[j]=strarr[i];
-                j++;
-            }
-        }
-        for(int i=0;i<ans.length;i++){
-            System.out.println(ans[i]);
-        }
+    //     int size=0;
+    //     for(int i=0;i<strarr.length;i++){
+    //         if(strarr[i].endsWith(".java")){
+    //             size++;
+    //         }
+    //     }
+    //     int j=0;
+    //     String ans[] = new String[size];
+    //     for(int i=0;i<strarr.length;i++){
+    //          if(strarr[i].endsWith(".java")){
+    //             ans[j]=strarr[i];
+    //             j++;
+    //         }
+    //     }
+    //     for(int i=0;i<ans.length;i++){
+    //         System.out.println(ans[i]);
+    //     }
 
 
    // String ans[] =new String[strarr.length];
