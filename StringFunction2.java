@@ -2,21 +2,59 @@ public class StringFunction2 {
     public static void main(String[] args) {
 
 
-        String s="abcddcba";
-        int i=0;
-        int j=s.length()-1;
+        String str1="run";
+        String str2 ="orn";
+        boolean flag=false;;
 
-        while(i<=j){
-            boolean flag =true;
-            if(s.charAt(i)==s.charAt(j)){
-                i++;
-                j--;
+
+        if(str1.length()==str2.length()){
+        for(int i=0;i<str1.length();i++){
+            boolean found=false;
+            for(int j=0;j<str2.length();j++){
+                if(str1.charAt(i)==str2.charAt(j)){
+                     found=true;
+                }
             }
-            else{
+            if(found==false){
+
                 flag=false;
                 break;
             }
+            else{
+                flag=true;
+            }
+
         }
+    }
+    System.out.println(flag);
+
+
+
+        //palindrome 
+        // String s="this is the first String";
+        // String arr[]=s.split(" ");
+        // String ans="";
+        // for(int i=arr.length-1;i>=0;i--){
+        //     ans=ans+arr[i]+" ";
+        // }
+        // System.out.println(ans);
+
+
+
+        // int i=0;
+        // int j=s.length()-1;
+
+        // while(i<=j){
+        //     boolean flag =true;
+        //     if(s.charAt(i)==s.charAt(j)){
+        //         i++;
+        //         j--;
+        //     }
+        //     else{
+        //         flag=false;
+        //         break;
+        //     }
+        // }
         
 
         
