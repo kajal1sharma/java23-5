@@ -1,3 +1,4 @@
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -9,14 +10,16 @@ public class FileIO {
 
 
         File f6= new File("javaTutorial", "temp.java");
-
-        // FileWriter fw= new FileWriter(f6);
-        FileWriter fw = new FileWriter("javaTutorial/temp.java");
+        FileWriter fw= new FileWriter(f6);
+        BufferedWriter bw = new BufferedWriter(fw);
+        BufferedWriter bw2 = new BufferedWriter(bw, 10);
+        
+        // FileWriter fw = new FileWriter("javaTutorial/temp.java");
         // fw.write(97);
         // fw.write(98);
         // fw.write(48);
-        fw.write("uyuyhjhgfdserrtuyio");
-        fw.close();
+        // fw.write("uyuyhjhgfdserrtuyio");
+        // fw.close();
         // FileReader fr = new FileReader(f6);
         // int ch = fr.read();
         // while(ch!=-1){
