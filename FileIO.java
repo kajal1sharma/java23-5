@@ -20,13 +20,14 @@ public class FileIO {
         // fw.write(48);
         // fw.write("uyuyhjhgfdserrtuyio");
         // fw.close();
-        // FileReader fr = new FileReader(f6);
-        // int ch = fr.read();
-        // while(ch!=-1){
-        //     System.out.print((char)ch);
-        //     ch = fr.read();
-        // }
-        // fr.close();
+        FileReader fr = new FileReader(f6);
+        
+        int ch = fr.read();
+        while(ch!=-1){
+            System.out.print((char)ch);
+            ch = fr.read();
+        }
+        fr.close();
         // System.out.println(f6.exists());
         // System.out.println(f6.);
         // Scanner sc= new Scanner(System.in);
