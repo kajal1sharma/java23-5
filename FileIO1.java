@@ -3,17 +3,40 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class FileIO1 {
     public static void main(String[] args)  throws FileNotFoundException , IOException{
+       
+        FileWriter f= new FileWriter("abc.txt",true);
+
+        Scanner sc= new Scanner(System.in);
+        String s;
+        int ch;
+        while(true){
+            s= sc.nextLine();
+            f.write(s);
+            
+            System.out.println("DO you want to enter more lines( 0 to exit)");
+            ch= sc.nextInt();
+            sc.nextLine();
+            if(ch==0){
+                break;
+            }
+
+        }
+       
+        f.close();
+
+       
         // File f1 = new File("abc.txt");
         //FileWriter fw = new FileWriter(f1);
-        FileWriter fw = new FileWriter("abc.txt",true);
-        fw.write(97);
-        char ch[]= {'a','b','c','d','e','f'};
-        fw.write(ch);
-        fw.write("\nthis is line 7");
-        fw.close();
+        // FileWriter fw = new FileWriter("abc.txt",true);
+        // fw.write(97);
+        // char ch[]= {'a','b','c','d','e','f'};
+        // fw.write(ch);
+        // fw.write("\nthis is line 7");
+        // fw.close();
 
 
         // FileReader f = new FileReader(f1);//It is used to transfer charactters
